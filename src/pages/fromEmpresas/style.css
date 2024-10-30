@@ -90,5 +90,86 @@
     height: 400px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+.h1-section-2{
+    color: var(--color-blue-principal);
+    width: 849px;
+    line-height: 1.0;
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.slogan-section-2{
+    width: 849px;
+    font-size: 20px;
+    color: var(--color-black-principal);
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.container-cards-section-2{
+    display: flex;
+    margin-left: 10px;
+    gap: 25px;
+}
+
+.header-card{
+    display: flex;
+    gap: 10px;
+    text-align: end;
+}
+
+.header-card img{
+    width: 50px;
+    height: 50px;
+}
+
+.conteudo-card{
+    display: flex;
+    gap: 5px;
+}
+
+.span-1{
+    color: var(--color-blue-principal);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.span-2{
+    color: var(--color-black-principal);
+    width: 179px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.0;
+    margin-top: 8px;
+}
+
+.container-section-3{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+.header-section-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.h1-section-3{
+    color: var(--color-blue-principal);
+}
+
+.h1-section-3 span{
+    color: var(--color-black-principal);
+}
+
+.container-card-section-3{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
