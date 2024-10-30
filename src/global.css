@@ -1,0 +1,196 @@
+/*RESET CSS*/
+
+*::before,/* Remove margens, paddings e bordas padrão */
+*,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, /* Remove estilos de lista */
+ol {
+    list-style: none;
+}
+
+a { /* Remove sublinhado de links e usa uma cor padrão */
+    text-decoration: none;
+    color: inherit;
+}
+
+body { /* Definir fontes padrão e tornar os textos mais suaves */
+    font-family: 'League Spartan', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img, /* Ajuste para imagens, vídeos e figuras */
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:focus { /* Remover borda para focos visuais (pode ser personalizado depois) */
+    outline: none;
+}
+
+button, /* Redefinir botões e campos de formulário */
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+}
+
+html { /* Usar box-sizing border-box em todos os elementos */
+    box-sizing: border-box;
+}
+
+
+/*FONT CONFIGURAÇAO*/
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-Light.ttf') format('truetype');
+    font-weight:300;
+}
+
+@font-face {
+    font-family: 'Monomaniac One';
+    src: url('../src/assets/fonts/MonomaniacOne-Regular.ttf');
+    font-weight: normal;
+}
+
+
+/*ESTLOS GLOBAIS*/
+
+:root {
+    --color-blue-principal: #004AAD;
+    --color-black-principal: #000000;
+    --color-white-principal: #FFFFFF;
+    --color-gray-1: #F5F5F5;
+    --color-gray-2: #E4E4E4;
+    --color-gray-3: #D9D9D9; 
+    --color-gray-4: #D6D6D6;
+    --color-gray-borders: #2D2B2B;
+    --color-gray-inputs: #717171;
+}
+
+.text-title{
+    font-family: "League Spartan";
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.text-sub-title{
+    font-family: "League Spartan";
+    font-weight: 300;
+}
+
+.text{
+    font-family: "League Spartan";
+    font-weight: normal;
+}
+
+.text-button{
+    font-family: "Monomaniac One";
+    font-weight: normal;
+}
+
+.text-button-black{
+    color: var(--color-black-principal);
+    font-size: 18px;
+}
+
+.text-button-blue{
+    color: var(--color-blue-principal);
+    font-size: 18px;
+}
+
+.text-button-black:hover{
+    color: var(--color-blue-principal);
+    text-decoration: underline;
+}
+
+.text-button-blue:hover{
+    color: var(--color-black-principal);
+    text-decoration: underline;
+}
+.confirm-button-regular{
+    width: 120px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--color-white-principal);
+    background-color: var(--color-blue-principal);
+}
+
+.confirm-button-medium{
+    width: 165px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--color-white-principal);
+    background-color: var(--color-blue-principal);
+}
+
+.confirm-button-regular:hover, .confirm-button-medium:hover{
+    background-color: var(--color-black-principal);
+}
+
+.nav-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.nav-button{
+    width: 187px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black-principal);
+    font-size: 20px;
+    background-color: var(--color-gray-4);
+}
+
+.nav-button:hover{
+    background-color: var(--color-blue-principal);
+    color: var(--color-white-principal);
+}
+
+.border-radious-left{
+    border-radius: 10px 0 0 10px;
+}
+
+.border-radious-right{
+    border-radius: 0 10px 10px 0;
+}
