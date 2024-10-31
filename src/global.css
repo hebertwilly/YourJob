@@ -165,6 +165,9 @@ html { /* Usar box-sizing border-box em todos os elementos */
     background-color: var(--color-gray-2);
 }
 
+.text-black{
+    color: var(--color-black-principal);
+}
 .backgroud-black{
     background-color: var(--color-black-principal);
 }
