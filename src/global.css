@@ -164,6 +164,10 @@ html { /* Usar box-sizing border-box em todos os elementos */
 .backgroud-gray-2{
     background-color: var(--color-gray-2);
 }
+
+.backgroud-black{
+    background-color: var(--color-black-principal);
+}
 .confirm-button-regular{
     width: 120px;
     height: 42px;
