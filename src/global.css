@@ -168,6 +168,10 @@ html { /* Usar box-sizing border-box em todos os elementos */
 .text-black{
     color: var(--color-black-principal);
 }
+
+.text-white{
+    color: var(--color-white-principal);
+}
 .backgroud-black{
     background-color: var(--color-black-principal);
 }
@@ -195,7 +199,19 @@ html { /* Usar box-sizing border-box em todos os elementos */
     background-color: var(--color-blue-principal);
 }
 
-.confirm-button-regular:hover, .confirm-button-medium:hover{
+.confirm-button-large{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--color-white-principal);
+    background-color: var(--color-blue-principal);
+}
+
+.confirm-button-regular:hover, .confirm-button-medium:hover, .confirm-button-large:hover{
     background-color: var(--color-black-principal);
 }
 
