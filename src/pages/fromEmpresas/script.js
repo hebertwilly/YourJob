@@ -1,3 +1,12 @@
+const page = document.title;
+
+if(page === 'YourJob | Empresas'){
+    const buttonEmpresa = document.getElementById('empresa');
+
+    buttonEmpresa.style.color = "#FFFFFF";
+    buttonEmpresa.style.backgroundColor = "#004AAD";
+}
+
 //ANIMAÇÃO AO CARREGAR A PAGINA
     const elementos = document.querySelectorAll('.refresh-animate');
     function animarElementos() {
