@@ -200,6 +200,10 @@ html { /* Usar box-sizing border-box em todos os elementos */
 .backgroud-black{
     background-color: var(--color-black-principal);
 }
+
+.backgroud-white{
+    background-color: var(--color-white-principal);
+}
 .confirm-button-regular{
     width: 120px;
     height: 42px;
@@ -341,4 +345,34 @@ html { /* Usar box-sizing border-box em todos os elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/*ANIMAÇÂO ESTILOS*/
+.refresh-animate {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Move o elemento para baixo */
+    transition: opacity 0.9s ease, transform 0.9s ease; /* Transições suaves para opacidade e transformação */
+}
+
+/* Classe que será adicionada durante a animação */
+.refresh-animate.animar {
+    opacity: 1; /* Torna o elemento visível */
+    transform: translateY(0); /* Move o elemento para sua posição original */
+}
+
+/* Efeito de delay para cada elemento */
+.refresh-animate:nth-child(1) {
+    transition-delay: 0.3s; /* Atraso de 200ms */
+}
+.refresh-animate:nth-child(2) {
+    transition-delay: 0.6s; /* Atraso de 400ms */
+}
+.refresh-animate:nth-child(3) {
+    transition-delay: 0.9s; /* Atraso de 600ms */
+}
+
+.elemento {
+    opacity: 0;
+    transform: translateY(20px); /* Posição inicial */
 }
