@@ -176,19 +176,47 @@
     line-height: 1.0;
 }
 
-.carrosel{
+.carrosel-container{
     margin-top: 45px;
     border-radius: 15px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.carrosel{
     display: flex;
     gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap; /* evita quebra de linha */
+    padding-right: 20px;
+}
 
+.carrosel::-webkit-scrollbar{
+    display: none;
+}
+
+.container-dot-button{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+.container-dot-button button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.left-arrow i, .right-arrow i{
+    font-size: 30px;
 }
 .card-carrosel{
     min-width: 500px;
-    max-width: 500px;
+    width: 500px;
     height: 430px;
     background-color: var(--color-white-principal);
     border-radius: 15px;
@@ -198,6 +226,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 0 0 auto;
+    flex-shrink: 0; /* evita que o card diminua ao scrollar */
+    box-sizing: border-box; /* garante que padding não expanda o card */
 }
 
 .header-card-carrosel{
