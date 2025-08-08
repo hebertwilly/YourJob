@@ -77,25 +77,25 @@ html { /* Usar box-sizing border-box em todos os elementos */
 
 @font-face {
     font-family: 'League Spartan';
-    src: url('../src/assets/fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/LeagueSpartan-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'League Spartan';
-    src: url('../src/assets/fonts/LeagueSpartan-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/LeagueSpartan-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'League Spartan';
-    src: url('../src/assets/fonts/LeagueSpartan-Light.ttf') format('truetype');
-    font-weight:300;
+    src: url('./assets/fonts/LeagueSpartan-Light.ttf') format('truetype');
+    font-weight: 300;
 }
 
 @font-face {
     font-family: 'Monomaniac One';
-    src: url('../src/assets/fonts/MonomaniacOne-Regular.ttf');
+    src: url('./assets/fonts/MonomaniacOne-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
