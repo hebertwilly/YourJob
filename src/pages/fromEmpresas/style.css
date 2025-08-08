@@ -1,34 +1,10 @@
 @import url('../../global.css');
 
-.header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    border-bottom: 1px solid var(--color-gray-3);
-}
-
-.ul{
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-}
-
-.confirm-button-regular a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container-conteudo-section1{
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
+    scroll-snap-align: center;
 }
 
 .h1-section-1{
@@ -90,5 +66,239 @@
     height: 400px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 100px;
+    margin-top: 80px;
+    scroll-snap-align: center;
 }
+
+.h1-section-2{
+    color: var(--color-blue-principal);
+    width: 849px;
+    line-height: 1.0;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.slogan-section-2{
+    width: 849px;
+    font-size: 20px;
+    color: var(--color-black-principal);
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.container-cards-section-2{
+    display: flex;
+    margin-left: 10px;
+    gap: 25px;
+}
+
+.header-card{
+    display: flex;
+    gap: 10px;
+    text-align: end;
+}
+
+.header-card img{
+    width: 50px;
+    height: 50px;
+}
+
+.conteudo-card{
+    display: flex;
+    gap: 5px;
+}
+
+.span-1{
+    color: var(--color-blue-principal);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.span-2{
+    color: var(--color-black-principal);
+    width: 179px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.0;
+    margin-top: 8px;
+}
+
+.container-section-3{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 80px;
+    scroll-snap-align: center;
+}
+
+.header-section-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.h1-section-3{
+    color: var(--color-blue-principal);
+}
+
+.h1-section-3 span{
+    color: var(--color-black-principal);
+}
+
+.container-card-section-3{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container-section-4{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container-card-section-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 25px;
+}
+
+.container-section-4 h2{
+    font-size: 30px;
+}
+
+.card-section-4{
+    width: 377px;
+    height: 212px;
+    background-color: var(--color-blue-principal);
+    color: var(--color-white-principal);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section-4 img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.header-card-section-4 {
+    display: flex;
+    align-items: center;
+}
+
+.header-card-section-4 span{
+    font-size: 30px;
+}
+.header-card-section-4 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.description{
+    font-weight: 400;
+    text-align: center;
+    width: 329px;
+    margin-top: 10px;
+}
+
+.background-black{
+    background-color: var(--color-black-principal);
+}
+
+.container-section-5{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-2);
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    scroll-snap-align: center;
+}
+
+.h1-container-section-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-marcas-section-5{
+    display: flex;
+    align-items:center;
+    gap: 60px;
+}
+
+.container-section-6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black-principal);
+    height: 920px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.slogan-section-6{
+    font-size: 20px;
+    width: 420px;
+    line-height: 1.1;
+    text-align:start;
+    margin-top: 30px;
+}
+.h1-section-6{
+    width: 450px;
+    line-height: 1.0;
+}
+
+.form-section-6{
+    background-color: var(--color-white-principal);
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.form-section-6 h1{
+    text-align: center;
+    line-height: 1;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.form-section-6 input{
+    width: 450px;
+    height: 40px;
+    border: 1px solid var(--color-black-principal);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-section-6 label{
+    text-align: left;
+    width: 450px;
+    font-weight: 300;
+}
+
+.span-form-section-6{
+    text-align: center;
+    width: 300px;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+

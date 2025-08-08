@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourJob | Candidatos</title>
+    <link rel="stylesheet" href="../fromCandidatos/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+</head>
+<body>
+    <header class="header">
+        <img class="logo-yourJob-svg" src="../../assets/logo-SVG.svg" alt="Logotipo da Empresa YourJob">
+        <nav class="nav-menu">
+            <ul class="ul">
+                <li class="text-button-black text-button"><a href="">Cadastre-se</a></li>
+                <li class="confirm-button-regular text-button"><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-section-1">
+            <nav class="nav-pages">
+                <a class="nav-button border-radious-left text-sub-title"  href="/src/pages/fromEmpresas/index.html">Para Empresas</a>
+                <a class="nav-button border-radious-right text-sub-title" id="candidatos" href="/src/pages/fromCandidatos/FromCandidatos.html">Para Candidatos</a>
+            </nav>
+            <div class="container-conteudo-section1">
+                <div class="container-slogans-conteudo">
+                    <h1 class="h1-section-1 text-title refresh-animate">
+                        <span>Your</span>Job para quem está procurando emprego
+                    </h1>
+                    <p class="slogan text-sub-title refresh-animate">
+                        O portal de vagas mais amado do Brasil. Felicidade do recrutamento à seleção. 
+                        Encontre vagas de emprego que combinam com você através da YourJob
+                    </p>
+                    <div class="container-buttons">
+                        <a class="confirm-button-medium text-button refresh-animate" href="">Acessar vagas</a>
+                        <a class="text-button text-button-blue refresh-animate" href="/src/pages/fromCandidatos/FromCandidatos.html">Está querendo contratar?</a>
+                    </div>
+                </div>
+                <div class="container-imgs">
+                    <div class="content-imgs-1-3 refresh-animate">
+                        <img class="" src="../../assets/img/img1.png" alt="Mulher segurando uma prancheta">
+                        <img class="" src="../../assets/img/img3.png" alt="Mulher segurando fichario">
+                    </div>
+                    <div class="content-imgs-2-4 refresh-animate">
+                        <img class="img2" src="../../assets/img/img2.png" alt="Empresario de braços cruzados">
+                        <img class="" src="../../assets/img/img4.png" alt="Colegas de equipe conversando">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-search">
+            <div class="content-search elemento" id="container-search">
+                <div class="input-cargo">
+                    <label for="cargo">Qual vaga você procura?</label>
+                    <div class="input-search">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" name="cargo" id="cargo" placeholder="Nome da vaga ou cargo">
+                    </div>
+                </div>
+                <div class="input-localizacao">
+                    <label for="cargo">Onde você procura?</label>
+                    <div class="input-search">
+                        <i class="ph ph-map-pin-area"></i>
+                        <input type="text" name="local" id="local" placeholder="Informe uma localização">
+                    </div>
+                </div>
+                <div class="content-buttons">
+                    <a class="confirm-button-regular text-button" href="#container-search"><i class="ph ph-sliders-horizontal"></i>Filtrar</a>
+                    <a class="confirm-button-medium text-button" href="#container-search"><i class="ph ph-magnifying-glass"></i>Buscar vagas</a>
+                </div>
+            </div>
+        </div>
+        <section class="container-section-2">
+            <h1 class="text-title text-white elemento">O que é a YourJob Candidatos?</h1>
+            <p class="text-sub-title text-white elemento">
+                A YourJob trata-se de um portal de vagas focado em conectar candidatos a oportunidades de emprego. 
+                Por meio do portal, você encontrará vagas disponíveis em diversas áreas do mercado. 
+                Com um sistema de busca eficiente, é possível filtrar as oportunidades de acordo com sua área de atuação, 
+                localização e nível de experiência desejado.
+            </p>
+            <div class="container-cards-section-2">
+                <div class="card-padrao-1 backgroud-white elemento">
+                    <div class="header-padrao-1 text-black">
+                        <img src="../../assets/icons/UserPlus.svg" alt="Icone de um prédio">
+                        <span>Cadastre-se</span>
+                    </div>
+                    <span class="conteudo-padrao-1">
+                        Crie uma conta para sua empresa e selecione um plano YourJob
+                    </span>
+                </div>
+                <div class="card-padrao-1 backgroud-white elemento">
+                    <div class="header-padrao-1 text-black">
+                        <img src="../../assets/icons/FilePlus.svg" alt="Icone de um prédio">
+                        <span>Cadastre-se</span>
+                    </div>
+                    <span class="conteudo-padrao-1 text-black">
+                        Crie uma conta para sua empresa e selecione um plano YourJob
+                    </span>
+                </div>
+                <div class="card-padrao-1 backgroud-white elemento">
+                    <div class="header-padrao-1 text-black">
+                        <img src="../../assets/icons/ShootingStar.svg" alt="Icone de um prédio">
+                        <span>Cadastre-se</span>
+                    </div>
+                    <span class="conteudo-padrao-1">
+                        Crie uma conta para sua empresa e selecione um plano YourJob
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-section-3">
+            <h1 class="h1-section-3 text-title elemento">Encontre Vagas de emprego</h1>
+            <div class="container-subtitle-section-3 elemento">
+                <h2 class="text-blue">Qual universo de trabalho mais combina com você?</h2>
+                <a class="confirm-button-medium text-button" href="">Buscar vagas</a>
+            </div>
+            <div class="carrosel-container">
+                <div class="carrosel" id="carrosel">
+                    <div class="card-carrosel-1 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Supervisor de midias digitais</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div>
+                    <div class="card-carrosel-2 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Cordenador de Marketing</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div>
+    
+                    <div class="card-carrosel-3 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Agente de Trafego Pago</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div>
+    
+                    <div class="card-carrosel-4 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Publicitario</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div>
+    
+                    <div class="card-carrosel-5 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Gerente Comercial</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div>
+    
+                    <div class="card-carrosel-6 card-carrosel">
+                        <div class="header-card-carrosel">
+                            <h1 class="text-black">Head de Marketing Digital</h1>
+                            <h2 class="text-blue text-sub-title">WSI MARKETING DIGITAL</h2>
+                            <div class="content-especification-card">
+                                <div>
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>São Paulo - SP</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-suitcase"></i>
+                                    <span>PJ</span>
+                                </div>
+                                <div>
+                                    <i class="ph ph-network"></i>
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="content-salario">
+                                <i class="ph ph-currency-circle-dollar"></i>
+                                <span>Não informado</span>
+                            </div>
+                        </div>
+                        <span class="vaga-description">
+                            Agência internacional de marketing digital presente em mais de 80 países e com mais de 1.000 escritórios. 
+                            Já ajudamos mais de 100 mil empresas no mundo ...
+                        </span>
+                        <a class="confirm-button-large text-button" href="">Quero me candidatar</a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer footerBlue">
+            <div class="div-1-footer">
+                <img src="../../assets/logo-SVG.svg" alt="Logo da Iparty">
+                <div class="redes-sociais-footer">
+                    <i class="ph ph-at"></i>
+                    <i class="ph ph-facebook-logo"></i>
+                    <i class="ph ph-instagram-logo"></i>
+                    <i class="ph ph-linkedin-logo"></i>
+                    <i class="ph ph-youtube-logo"></i>
+                </div>
+            </div>
+            <div class="div-2-footer">
+                <a class="text-button-blue text-button" href="">Para candidatos</a>
+                <a class="text-button-blue text-button" href="">Para empresas</a>
+            </div>
+            <div class="div-3-footer">
+                <span>Copyright © 2024 · YourJob © Todos os direitos reservados</span>
+                <span>CREATED BY HEBERT WILLY</span>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="../fromCandidatos/script.js"></script>
+</body>
+</html>

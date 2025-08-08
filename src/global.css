@@ -1,4 +1,22 @@
 /*RESET CSS*/
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Estilo do polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-1);
+}
+
+/* Estilo do polegar no hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gray-2); /* Cor mais sólida no hover */
+}
+
 
 *::before,/* Remove margens, paddings e bordas padrão */
 *,
@@ -55,7 +73,6 @@ html { /* Usar box-sizing border-box em todos os elementos */
     box-sizing: border-box;
 }
 
-
 /*FONT CONFIGURAÇAO*/
 
 @font-face {
@@ -84,6 +101,32 @@ html { /* Usar box-sizing border-box em todos os elementos */
 
 
 /*ESTLOS GLOBAIS*/
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid var(--color-gray-3);
+}
+
+.ul{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-button-regular a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 :root {
     --color-blue-principal: #004AAD;
@@ -137,6 +180,29 @@ html { /* Usar box-sizing border-box em todos os elementos */
     color: var(--color-black-principal);
     text-decoration: underline;
 }
+
+.text-blue{
+    color: var(--color-blue-principal);
+}
+
+.backgroud-gray-2{
+    background-color: var(--color-gray-2);
+}
+
+.text-black{
+    color: var(--color-black-principal);
+}
+
+.text-white{
+    color: var(--color-white-principal);
+}
+.backgroud-black{
+    background-color: var(--color-black-principal);
+}
+
+.backgroud-white{
+    background-color: var(--color-white-principal);
+}
 .confirm-button-regular{
     width: 120px;
     height: 42px;
@@ -161,7 +227,19 @@ html { /* Usar box-sizing border-box em todos os elementos */
     background-color: var(--color-blue-principal);
 }
 
-.confirm-button-regular:hover, .confirm-button-medium:hover{
+.confirm-button-large{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--color-white-principal);
+    background-color: var(--color-blue-principal);
+}
+
+.confirm-button-regular:hover, .confirm-button-medium:hover, .confirm-button-large:hover{
     background-color: var(--color-black-principal);
 }
 
@@ -183,7 +261,7 @@ html { /* Usar box-sizing border-box em todos os elementos */
 }
 
 .nav-button:hover{
-    background-color: var(--color-blue-principal);
+    background-color: var(--color-black-principal);
     color: var(--color-white-principal);
 }
 
@@ -193,4 +271,112 @@ html { /* Usar box-sizing border-box em todos os elementos */
 
 .border-radious-right{
     border-radius: 0 10px 10px 0;
+}
+
+.card-padrao-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.header-padrao-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.header-padrao-1 img{
+    width: 40px;
+    height: 40px;
+}
+
+.header-padrao-1 span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.conteudo-padrao-1{
+    font-weight: normal;
+    width: 196px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--color-gray-2);
+    height: 226px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.footerBlue{
+    background-color: var(--color-gray-3);
+}
+
+.div-1-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociais-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-blue-principal);
+}
+
+.div-2-footer{
+    display: flex;
+    gap: 15px;
+}
+
+.div-2-footer a{
+    font-size: 20px;
+}
+
+.div-3-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*ANIMAÇÂO ESTILOS*/
+.refresh-animate {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Move o elemento para baixo */
+    transition: opacity 0.9s ease, transform 0.9s ease; /* Transições suaves para opacidade e transformação */
+}
+
+/* Classe que será adicionada durante a animação */
+.refresh-animate.animar {
+    opacity: 1; /* Torna o elemento visível */
+    transform: translateY(0); /* Move o elemento para sua posição original */
+}
+
+/* Efeito de delay para cada elemento */
+.refresh-animate:nth-child(1) {
+    transition-delay: 0.3s; /* Atraso de 200ms */
+}
+.refresh-animate:nth-child(2) {
+    transition-delay: 0.6s; /* Atraso de 400ms */
+}
+.refresh-animate:nth-child(3) {
+    transition-delay: 0.9s; /* Atraso de 600ms */
+}
+
+.elemento {
+    opacity: 0;
+    transform: translateY(20px); /* Posição inicial */
 }
