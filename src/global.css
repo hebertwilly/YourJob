@@ -73,7 +73,6 @@ html { /* Usar box-sizing border-box em todos os elementos */
     box-sizing: border-box;
 }
 
-
 /*FONT CONFIGURAÇAO*/
 
 @font-face {
@@ -318,6 +317,11 @@ html { /* Usar box-sizing border-box em todos os elementos */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+
+.footerBlue{
+    background-color: var(--color-gray-3);
 }
 
 .div-1-footer{
