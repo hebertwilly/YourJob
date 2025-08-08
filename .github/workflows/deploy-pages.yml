@@ -1,8 +1,8 @@
-name: Deploy Pages
+name: Deploy Pages (publish src/ as-is)
 
 on:
   push:
-    branches: [ "main" ]   # troca se tua branch for outra
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -15,31 +15,38 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      
-      - name: Preparar artefatos
+      # Monta artefato com TUDO que há em src/
+      - name: Prepare artifact from src/
         run: |
+          rm -rf _site
           mkdir -p _site
-          cp -R src/pages/fromEmpresas/* _site/
+          cp -R src/* _site/
           # evita interferência do Jekyll
           touch _site/.nojekyll
+          # se não existir index.html na raiz do src/, cria um redirecionamento para fromEmpresas
+          if [ ! -f _site/index.html ]; then
+            cat > _site/index.html <<'HTML'
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=pages/fromEmpresas/index.html">
+<script>location.replace("pages/fromEmpresas/index.html");</script>
+<title>Redirecionando…</title>
+</head><body></body></html>
+HTML
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
